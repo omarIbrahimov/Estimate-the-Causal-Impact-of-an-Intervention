@@ -16,7 +16,7 @@ California sits on the lower side of the dense region of the other states and it
 
 ## Synthetic California
 
-The idea is to give different weights to the donor states so that their mix reproduces California before 1989. Weights are not negative and sum to 1. 
+The idea is to give different weights to the donor states so that their mix reproduces California before 1989.
 
 First I trained the weights on 1970-1983 and tested on 1984-1988. It fit well in training (RMSE 0.81) but got worse on validation (RMSE 5.56), because the real California started to fall faster in the late 80s. Still, it was better than the level-adjusted average benchmark (RMSE 9.15), so I decided to refit on the whole pre-period (1970-1988).
 
